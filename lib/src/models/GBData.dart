@@ -60,7 +60,7 @@ class GBData {
 class Address {
   Address({
     required this.road,
-    required this.village,
+    this.village,
     required this.county,
     required this.stateDistrict,
     required this.state,
@@ -71,7 +71,7 @@ class Address {
   });
 
   String road;
-  String village;
+  String? village;
   String county;
   String stateDistrict;
   String state;
